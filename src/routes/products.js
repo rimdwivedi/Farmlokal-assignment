@@ -1,6 +1,6 @@
 const express = require("express");
 const redis = require("../config/redis");
-const { getProducts } = require("../services/productService");
+const { getProducts } = require("../services/productservice");
 const authMiddleware = require("../middlewares/auth");
 
 const router = express.Router();
