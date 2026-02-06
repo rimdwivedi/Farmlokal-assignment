@@ -268,24 +268,24 @@ node src/server.js
   ## 📌 API Endpoints
 
 ### 🔐 Authentication
-- **GET** `/auth/token`  
+- **GET** https://farmlokal-assignment.onrender.com/auth/token
   Returns a mocked OAuth2 access token (cached in Redis).
 
 ### 🛒 Products
-- **GET** `/products`  
+- **GET**  https://farmlokal-assignment.onrender.com/products
   Product listing with cursor-based pagination, search, sorting, and filtering.
 
 ### 🔗 Webhook
-- **POST** `/webhook`  
+- **POST** https://farmlokal-assignment.onrender.com/webhook
   Webhook receiver with Redis-based idempotency.  
   **Header required:** `x-event-id`
 
 ### 🧪 External API Test
-- **GET** `/test`  
+- **GET** https://farmlokal-assignment.onrender.com/test
   Tests external API integration with retry, timeout, and circuit breaker logic.
 
 ### ❤️ Health Check
-- **GET** `/health`  
+- **GET** https://farmlokal-assignment.onrender.com/health  
   Returns service health status.
 
 
