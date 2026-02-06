@@ -1,0 +1,13 @@
+const redis = require("redis");
+
+const client = redis.createClient({
+  url: process.env.REDIS_URL,
+});
+
+client.connect();
+
+client.on("connect", () => {
+  console.log("Redis connected");
+});
+
+module.exports = client;
